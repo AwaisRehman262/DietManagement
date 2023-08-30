@@ -46,6 +46,8 @@ const CaloriesCalculator = () => {
             </div>
             {calories && <p>Your estimated daily calories: {calories}</p>}
         </div>
+        
+                        
     );
 };
 
