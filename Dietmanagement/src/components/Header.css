@@ -1,0 +1,26 @@
+/* Header.css */
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.navItem a {
+    color: #fff;
+    text-decoration: none;
+}
