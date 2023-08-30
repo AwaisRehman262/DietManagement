@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import './mealplanner.css';
 const MealPlanner = () => {
     const [selectedMeals, setSelectedMeals] = useState([]);
 
@@ -12,7 +12,7 @@ const MealPlanner = () => {
     };
 
     return (
-        <div style={styles.container}>
+        <div  className="mealplanner" style={styles.container}>
             <h2>Meal Planner</h2>
             <form style={styles.form}>
                 <div>
@@ -22,6 +22,7 @@ const MealPlanner = () => {
                         onChange={(e) => handleMealSelect('monday', e.target.value)}
                         value={selectedMeals['monday'] || ''}
                     >
+
                         <option value="">Select a meal</option>
                         <option value="breakfast">Breakfast</option>
                         <option value="lunch">Lunch</option>
@@ -41,8 +42,9 @@ const MealPlanner = () => {
 const styles = {
     container: {
         maxWidth: '800px',
-        margin: '0 auto',
+        margin: "0 auto",
         padding: '2rem',
+    
     },
     form: {
         display: 'grid',

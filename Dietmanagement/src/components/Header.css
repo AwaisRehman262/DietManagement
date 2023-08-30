@@ -1,11 +1,13 @@
 /* Header.css */
 .header {
-    background-color: #333;
+    background-color: #2e1747;
     color: #fff;
     display: flex;
+    /* position: fixed; */
+    width: 98%;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 10px;
 }
 
 .logo {
