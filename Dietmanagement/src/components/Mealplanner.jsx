@@ -16,11 +16,11 @@ const MealPlanner = () => {
             <h2>Meal Planner</h2>
             <form style={styles.form}>
                 <div>
-                    <label htmlFor="monday">Monday:</label>
+                    <label htmlFor="Monday">Monday:</label>
                     <select
-                        id="monday"
-                        onChange={(e) => handleMealSelect('monday', e.target.value)}
-                        value={selectedMeals['monday'] || ''}>
+                        id="Monday"
+                        onChange={(e) => handleMealSelect('Monday', e.target.value)}
+                        value={selectedMeals['Monday'] || ''}>
                         <option value="">Select a meal</option>
                         <option value="breakfast">Breakfast</option>
                         <option value="lunch">Lunch</option>
