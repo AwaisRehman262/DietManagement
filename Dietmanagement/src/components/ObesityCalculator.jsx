@@ -156,21 +156,6 @@ const ObesityCalculator = () => {
 //                 </div>
 //             )}
 //         </div>
-    );
-};
 
-
-const styles = {
-    container: {
-        maxWidth: '800px',
-        margin: "0 auto",
-        padding: '2rem',
-
-    },
-    form: {
-        display: 'grid',
-        gap: '1rem',
-    },
-};
 
 export default ObesityCalculator;
