@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Caloriescalculator.css'
 
 const CaloriesCalculator = () => {
     const [weight, setWeight] = useState('');
@@ -20,9 +21,9 @@ const CaloriesCalculator = () => {
     };
 
     return (
-        <div style={styles.container}>
+        <div className={"container"}>
             <h2>Calories Calculator</h2>
-            <div style={styles.form}>
+            <div className={"form"}>
                 <label htmlFor="weight">Weight (in kg):</label>
                 <input
                     type="number"
@@ -46,19 +47,9 @@ const CaloriesCalculator = () => {
             </div>
             {calories && <p>Your estimated daily calories: {calories}</p>}
         </div>
+        
+                        
     );
-};
-
-const styles = {
-    container: {
-        maxWidth: '400px',
-        margin: '0 auto',
-        padding: '2rem',
-    },
-    form: {
-        display: 'grid',
-        gap: '1rem',
-    },
 };
 
 export default CaloriesCalculator;

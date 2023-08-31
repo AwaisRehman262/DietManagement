@@ -1,23 +1,15 @@
- .mealplanner{
-    flex-wrap: wrap;
-    background: #FFEEF4
-    
-}
-.mealplanner.h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
- }  
-
-/* mealplanner.css */
-.mealplanner {
+/* caloriescalculator.css */
+.container {
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
+    align-content: center;
 }
 
-.mealplanner:hover {
+.container:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -32,42 +24,56 @@
     color: #555;
 }
 
-form {
+.form {
     padding: 1rem;
 }
 
-label {
+.label {
     font-weight: bold;
     display: block;
     margin-bottom: 0.5rem;
     transition: color 0.3s ease;
 }
 
-label:hover {
+.label:hover {
     color: #555;
 }
 
-select {
+.input {
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem; /* Adjusted padding */
     border: 1px solid #ddd;
     border-radius: 4px;
+    font-size: 14px; /* Adjusted font size */
     transition: border-color 0.3s ease;
 }
 
-select:focus,
-select:hover {
+.input:focus,
+.input:hover {
+    border-color: #333;
+}
+
+.select {
+    width: 100%;
+    padding: 0.3rem; /* Adjusted padding */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px; /* Adjusted font size */
+    transition: border-color 0.3s ease;
+}
+
+.select:focus,
+.select:hover {
     border-color: #333;
 }
 
 /* Style for dropdown options */
-select option {
+.select option {
     background-color: #fff;
     color: #333;
 }
 
-/* Style for buttons */
-button {
+.button {
     background-color: #333;
     color: #fff;
     border: none;
@@ -77,7 +83,7 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button:hover {
+.button:hover {
     background-color: #555;
 }
 

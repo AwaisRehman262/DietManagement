@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ObesityCalculator.css'
 
 const ObesityCalculator = () => {
     const [weight, setWeight] = useState('');
@@ -25,9 +26,9 @@ const ObesityCalculator = () => {
     };
 
     return (
-        <div style={styles.container}>
+        <div className={"container"}>
             <h2>Obesity Calculator</h2>
-            <div style={styles.form}>
+            <div className={"form"}>
                 <label htmlFor="weight">Weight (in kg):</label>
                 <input
                     type="number"
@@ -54,16 +55,5 @@ const ObesityCalculator = () => {
     );
 };
 
-const styles = {
-    container: {
-        maxWidth: '400px',
-        margin: '0 auto',
-        padding: '2rem',
-    },
-    form: {
-        display: 'grid',
-        gap: '1rem',
-    },
-};
 
 export default ObesityCalculator;
