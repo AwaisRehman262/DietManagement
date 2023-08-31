@@ -26,6 +26,9 @@ export const SignUp = () => {
     return (
         <div className={"SignUppage"} style={styles.container}>
             <input className='input' type='text' value={name} onChange={e => { setName(e.target.value) }} placeholder='Name' />
+        <div className={"SignUp"} style={styles.container}>
+            <input type='text' className={"input"} value={name} onChange={e => { setName(e.target.value) }} placeholder='name' />
+
             <br />
             <input className='input' type='text' value={email} onChange={e => { setEmail(e.target.value) }} placeholder='Email' />
             <br />
