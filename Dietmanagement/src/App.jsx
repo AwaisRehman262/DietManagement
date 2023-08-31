@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import HomePage from './components/HomePage'
 import Footer from './components/Footer'
 import './App.css'
 import MealPlanner from './components/Mealplanner'
@@ -14,7 +15,9 @@ function App() {
       <BrowserRouter >
           <Header />
         <Routes>
-          <Route path={"/obesityCalculator"} element={<ObesityCalculator />} />
+        <Route path={"/"} element={<HomePage/>} />
+        <Route path={"/HomePage"} element={<HomePage/>} />
+          <Route path={"/ObesityCalculator"} element={<ObesityCalculator />} />
           <Route path={"/caloriesCalculator"} element={<CaloriesCalculator />} />
           <Route path={"/mealPlanner"} element={<MealPlanner/>} />
           <Route path={"/signUp"} element={<SignUp/>} />
