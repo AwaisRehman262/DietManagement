@@ -6,6 +6,7 @@ export const SignUp = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+
     const SignUp = async () => {
         let user = { name, email, password }
         console.log(user)
@@ -17,6 +18,8 @@ export const SignUp = () => {
                 "Accept": 'application/json'
             }
         })
+
+        localStorage.setItem('user-info',JSON.stringify(user))
 
     }
 
