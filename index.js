@@ -11,7 +11,7 @@ app.use(json())
 
 connectDataBase()
 
-app.use("/api", RouterMan)
+app.use("/", RouterMan)
 
 
 
