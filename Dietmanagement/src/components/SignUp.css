@@ -1,4 +1,26 @@
+.SignUp{
+    flex-wrap: wrap;
+    background: #FFEEF4
+    
+}
+.SignUp.h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }  
+
+/* SignUp.css */
 .SignUp {
-    border: 2px solid black;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.SignUp:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input{
     
 }
