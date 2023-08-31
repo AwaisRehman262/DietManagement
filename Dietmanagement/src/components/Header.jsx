@@ -16,6 +16,7 @@ const Header = () => {
                     <li className="navItem"><Link to={'/obesityCalculator'}>obesityCalculator</Link></li>
                     <li className="navItem"><Link to={'/mealPlanner'}>Meal Planner</Link></li>
                     <li className="navItem"><Link to={'/caloriesCalculator'}>Calories Calculator</Link></li>
+                    <li className="navItem"><Link to={'/signUp'}>Sign Up</Link></li>
                 </ul>
             </nav>
         </header>
