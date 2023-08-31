@@ -3,7 +3,7 @@ import express, { json } from "express";
 import { connectDataBase } from "./Helpers/ConnectDb.js";
 import RouterMan from "./Routes/Route.js";
 const app = express()
-const port = 2602
+const port = 8080
 
 app.use(json())
 
@@ -11,7 +11,7 @@ app.use(json())
 
 connectDataBase()
 
-app.use("/", RouterMan)
+app.use("/api", RouterMan)
 
 
 
