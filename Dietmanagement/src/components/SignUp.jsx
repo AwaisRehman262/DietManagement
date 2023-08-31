@@ -25,7 +25,7 @@ export const SignUp = () => {
 
     return (
         <div className="SignUp w-10/12 border-black border-2" style={styles.container}>
-            <input type='text' className="enabled:hover:border-gray-400 disabled:opacity-75 form-control" value={name} onChange={e => { setName(e.target.value) }} placeholder='name' />
+            <input type='text' value={name} onChange={e => { setName(e.target.value) }} placeholder='name' />
             <br />
             <input type='text' value={email} onChange={e => { setEmail(e.target.value) }} placeholder='email' />
             <br />
