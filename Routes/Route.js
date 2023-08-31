@@ -1,4 +1,5 @@
 import { Router } from "express"
+import {SignUp} from "../Services/Users.js"
 
 const RouterMan = Router()
 
@@ -7,7 +8,7 @@ RouterMan.post("/tiles")
 RouterMan.delete("/tiles:id")
 
 RouterMan.get("/signin")
-RouterMan.post("/signup")
+RouterMan.post("/signUp", SignUp)
 RouterMan.delete("/signin:id")
 
 RouterMan.get("/Admins")
