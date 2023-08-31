@@ -24,14 +24,15 @@ export const SignUp = () => {
     }
 
     return (
-        <div className={"SignUp"} style={styles.container}>
-            <input type='text' className={"input"} value={name} onChange={e => { setName(e.target.value) }} placeholder='name' />
+        <div className={"SignUppage"} style={styles.container}>
+            <input className='input' type='text' value={name} onChange={e => { setName(e.target.value) }} placeholder='Name' />
             <br />
-            <input type='text' value={email} onChange={e => { setEmail(e.target.value) }} placeholder='email' />
+            <input className='input' type='text' value={email} onChange={e => { setEmail(e.target.value) }} placeholder='Email' />
             <br />
-            <input type='text' value={password} onChange={e => { setPassword(e.target.value) }} placeholder='password' />
-            <Button variant="contained" onClick={SignUp} >SignUp</Button>
+            <input className='input' type='text' value={password} onChange={e => { setPassword(e.target.value) }} placeholder='Password' />
+            <Button className='button' variant="contained" onClick={SignUp}>SignUp</Button>
         </div>
+        
     )
 }
 
