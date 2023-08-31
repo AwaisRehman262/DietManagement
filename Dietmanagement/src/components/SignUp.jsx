@@ -24,7 +24,7 @@ export const SignUp = () => {
     }
 
     return (
-        <div className="SignUp w-10/12 border-black border-2">
+        <div className="SignUp w-10/12 border-black border-2" style={styles.container}>
             <input type='text' className="enabled:hover:border-gray-400 disabled:opacity-75 form-control" value={name} onChange={e => { setName(e.target.value) }} placeholder='name' />
             <br />
             <input type='text' value={email} onChange={e => { setEmail(e.target.value) }} placeholder='email' />
@@ -34,3 +34,17 @@ export const SignUp = () => {
         </div>
     )
 }
+
+
+const styles = {
+    container: {
+        maxWidth: '800px',
+        margin: "0 auto",
+        padding: '2rem',
+
+    },
+    form: {
+        display: 'grid',
+        gap: '1rem',
+    },
+};

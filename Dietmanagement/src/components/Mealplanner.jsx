@@ -114,7 +114,7 @@ const styles = {
         maxWidth: '800px',
         margin: "0 auto",
         padding: '2rem',
-    
+
     },
     form: {
         display: 'grid',

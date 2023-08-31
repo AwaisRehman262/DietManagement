@@ -21,9 +21,9 @@ const CaloriesCalculator = () => {
     };
 
     return (
-        <div className={"container"}>
+        <div className={"container"} style={styles.container}>
             <h2>Calories Calculator</h2>
-            <div className={"form"}>
+            <div className={"form"} style={styles.form}>
                 <label htmlFor="weight">Weight (in kg):</label>
                 <input
                     type="number"
@@ -50,6 +50,20 @@ const CaloriesCalculator = () => {
         
                         
     );
+};
+
+
+const styles = {
+    container: {
+        maxWidth: '800px',
+        margin: "0 auto",
+        padding: '2rem',
+
+    },
+    form: {
+        display: 'grid',
+        gap: '1rem',
+    },
 };
 
 export default CaloriesCalculator;
