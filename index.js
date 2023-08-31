@@ -6,6 +6,7 @@ const app = express()
 const port = 2602
 
 app.use(json())
+app.use(express.json())
 
 
 
