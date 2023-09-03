@@ -27,7 +27,7 @@ export async function SignUp(req, res) {
     
         res.status(201).json({ user: result, token: token })
     } catch (error) {
-        console.log(error)
+        console.log(JSON.stringify(error))
         res.status(500).json({message:"something went wrong"})
     }
 }
