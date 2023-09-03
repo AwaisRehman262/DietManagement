@@ -27,6 +27,7 @@ export const SignUp = () => {
         } else {
             setDisplayValueName('none')
         }
+        return true
     }
 
     const validateEmail = () => {
@@ -34,15 +35,17 @@ export const SignUp = () => {
 
         if (email.length <= 3) {
             setDisplayValueEmail('flex')
-            return
+            return false
         } setDisplayValueEmail('none')
 
 
         if (!email.endsWith('com') || !email.includes('@')) {
             setDisplayValueEmailEnd('flex')
-            return
+            return false
 
         } setDisplayValueEmailEnd('none')
+
+        return true
     }
 
     const validatePassword = () => {
@@ -52,7 +55,7 @@ export const SignUp = () => {
 
         if (password.length < 8) {
             setDisplayValuePassCount('flex')
-            return
+            return false
         } setDisplayValuePassCount('none')
 
         // variable to count upper case characters in the password.
@@ -111,40 +114,50 @@ export const SignUp = () => {
         if (countLowerCase == 0) {
             // invalid form, 0 lowercase characters
             setDisplayValuePassLowerCase('flex')
-            return
+            return false
         } setDisplayValuePassLowerCase('none')
 
         if (countUpperCase == 0) {
             // invalid form, 0 upper case characters
             setDisplayValuePassUpperCase('flex')
-            return
+            return false
         } setDisplayValuePassUpperCase('none')
 
         if (countDigit == 0) {
             // invalid form, 0 digit characters
             setDisplayValuePassDigit('flex')
-            return
+            return false
         } setDisplayValuePassDigit('none')
 
 
         if (countSpecialCharacters == 0) {
             // invalid form, 0 special characters characters
             setDisplayValuePassSpecialChar('flex')
-            return
+            return false
         } setDisplayValuePassSpecialChar('none')
+
+        return true
     }
     
     const validateForm = () => {
-        validateName()
-        validateEmail()
-        validatePassword()
+        let isValidatedName = validateName()
+        let isValidatedEmail = validateEmail()
+        let isValidatedPassword = validatePassword()
+        if (isValidatedName || isValidatedEmail || isValidatedPassword) {
+            return true
+        } return false
+
     }
 
     const signUp = async () => {
 
         // validating form
-            validateForm()
+            let isValidateForm = validateForm()
+        if (!isValidateForm) {
+            return
+        }
 
+        console.log(160)
         // Now fetching
         let user = { name, email, password }
 
@@ -156,7 +169,7 @@ export const SignUp = () => {
                 "Accept": 'application/json'
             }
         }).then(res => {
-            // console.log(res.json)
+            // window.location.href = '/Homepage'
 
         }).catch(err => {
             console.log(err.response.data)
